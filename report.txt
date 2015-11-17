@@ -1,0 +1,8 @@
+Using beautifulsoup4, I scraped the website and took a look at its html tree.
+I figured out where the needed content was, in this case in the courses_adblock_start tags.
+I scraped the course title from the course title child, the image source from the image tag's
+attributes, and the link from the parent tag. These were stored locally during python execution
+I then made a template for the website that you are currently looking at right now and
+created a new course (row) for each course. I did this by creating a template for each row, formated
+them, and concatinated them to the starting template. I then added the ending ones and called the
+web browser.
